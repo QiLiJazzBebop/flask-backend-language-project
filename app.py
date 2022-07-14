@@ -4,7 +4,6 @@ from route.helloWorld import baseRoute
 from route.bilingualConvert import convertRoute
 from flask_cors import CORS
 from flask import Flask
-import os
 
 
 def create_app():

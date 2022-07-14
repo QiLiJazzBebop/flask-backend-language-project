@@ -1,9 +1,12 @@
 import json
 
+from flask import jsonify
 from jisho_api.word import Word
 from jisho_api.kanji import Kanji
 from threading import Thread
 from requests import get, post, put, patch, delete, options, head
+
+from util.wordTranslateUtil import en2ja, ja2en
 
 request_methods = {
     'get': get,
@@ -41,6 +44,7 @@ def async_request(method, *args, callback=None, timeout=15, **kwargs):
     return thread
 
 
+# multi call
 def enToJpConvertCall(wordGet):
     # get the word written in other language
     apiSearchR = Word.request(wordGet)
@@ -63,6 +67,8 @@ def enToJpConvertCall(wordGet):
         threadGet.join()
     # get dictionary for relation explanation
     apiDictList = [data.dict() for data in apiSearchR.data]
+    for apiDict in apiDictList:
+        print(apiDict)
     # return response from third party (en->jp relation) and node(en node connection)
 
     # # short
@@ -85,11 +91,49 @@ def jpToEnConvertCall(wordGet):
     # join result
     for t in threads:
         t.join()
+
+    # test output
+    print(apiSearchR.data.dict())
     return resJsonResponse
 
 
 # jp->en/ en->jp
-def bilingualConvert(lang, wordGet):
+# single call
+def bilingualConvertOri(lang, wordGet):
+    res = get(generateSearchURL(lang, wordGet)).json()
+
+    if lang == 'en':
+        for i, node in enumerate(res['nodes']):
+            try:
+                bilingualList = en2ja(res['nodes'][i]['label'])
+                res['nodes'][i]['mainTranslation'] = bilingualList[0]
+                res['nodes'][i]['otherTranslation'] = bilingualList[1:]
+                res['nodes'][i]['fromLanguage'] = "en"
+                res['nodes'][i]['toLanguage'] = "jp"
+            except:
+                res['nodes'][i]['mainTranslation'] = ""
+                res['nodes'][i]['otherTranslation'] = []
+                res['nodes'][i]['fromLanguage'] = "en"
+                res['nodes'][i]['toLanguage'] = "jp"
+    elif lang == 'jp':
+        for i, node in enumerate(res['nodes']):
+            try:
+                bilingualList = ja2en(res['nodes'][i]['label'])
+                res['nodes'][i]['mainTranslation'] = bilingualList[0]
+                res['nodes'][i]['otherTranslation'] = bilingualList[1:]
+                res['nodes'][i]['fromLanguage'] = "jp"
+                res['nodes'][i]['toLanguage'] = "en"
+            except:
+                res['nodes'][i]['mainTranslation'] = ""
+                res['nodes'][i]['otherTranslation'] = []
+                res['nodes'][i]['fromLanguage'] = "jp"
+                res['nodes'][i]['toLanguage'] = "en"
+
+    return jsonify(res)
+
+
+# multi call
+def bilingualConvertMulti(lang, wordGet):
     if lang == 'en':
         resJsonResponse = enToJpConvertCall(wordGet)
         return json.dumps(resJsonResponse)

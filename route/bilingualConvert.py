@@ -1,14 +1,15 @@
-from flask import Blueprint
-from util.languageConvertUtil import bilingualConvert
+from flask import Blueprint, jsonify, request
+from util.wordTranslateUtil import *
+from util.wordConvertUtil import bilingualConvertOri
 
-convertRoute = Blueprint("convert", __name__, url_prefix="/api/search/convert")
-
-
-@convertRoute.get("/en/<word>")
-def bilingualEnConvertGet(word):
-    return bilingualConvert("en", word), 200
+convertRoute = Blueprint("nodes", __name__, url_prefix="/api/search/nodes")
 
 
-@convertRoute.get("/jp/<word>")
-def bilingualJpConvertGet(word):
-    return bilingualConvert("jp", word), 200
+@convertRoute.get("/en/<wordGet>")
+def bilingualEnConvertGet(wordGet):
+    return bilingualConvertOri('en', wordGet)
+
+
+@convertRoute.get("/jp/<wordGet>")
+def bilingualJpConvertGet(wordGet):
+    return bilingualConvertOri('jp', wordGet)
