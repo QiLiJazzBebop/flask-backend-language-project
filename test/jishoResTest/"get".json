@@ -1,0 +1,2023 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "slug": "受ける",
+            "is_common": true,
+            "tags": [
+                "wanikani9",
+                "wanikani29"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "受ける",
+                    "reading": "うける"
+                },
+                {
+                    "word": "請ける",
+                    "reading": "うける"
+                },
+                {
+                    "word": "承ける",
+                    "reading": "うける"
+                },
+                {
+                    "word": "享ける",
+                    "reading": "うける"
+                },
+                {
+                    "word": null,
+                    "reading": "ウケる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to receive",
+                        "to get"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to catch (e.g. a ball)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be struck by (wind, waves, sunlight, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to sustain (damage)",
+                        "to incur (a loss)",
+                        "to suffer (an injury)",
+                        "to feel (influence)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to undergo (e.g. surgery)",
+                        "to take (a test)",
+                        "to accept (a challenge)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be given (e.g. life, talent)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 受ける, 享ける"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to find funny",
+                        "to find humorous",
+                        "to be amused (by)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Colloquialism",
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. ウケる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to follow",
+                        "to succeed",
+                        "to be descended from"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 受ける, 享ける"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to face (south, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be modified by"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Linguistics"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 受ける, 承ける"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to obtain (a pawned item, etc.) by paying a fee"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "請け出す"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 請ける, now primarily used in compound words"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to be well-received",
+                        "to become popular",
+                        "to go down well"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. ウケる, うける"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "乗る",
+            "is_common": true,
+            "tags": [
+                "wanikani9"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "乗る",
+                    "reading": "のる"
+                },
+                {
+                    "word": "乘る",
+                    "reading": "のる"
+                },
+                {
+                    "word": null,
+                    "reading": "ノる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get on (train, plane, bus, ship, etc.)",
+                        "to get in",
+                        "to board",
+                        "to take",
+                        "to embark"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to get on (e.g. a footstool)",
+                        "to step on",
+                        "to jump on",
+                        "to sit on",
+                        "to mount"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "載る のる"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to reach",
+                        "to go over",
+                        "to pass"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to follow",
+                        "to stay (on track)",
+                        "to go with (the times, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to take part",
+                        "to participate",
+                        "to join"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to get into the swing (and sing, dance, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be deceived",
+                        "to be taken in"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be carried",
+                        "to be spread",
+                        "to be scattered"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "usu. with an adverb of manner, e.g. よく乗る"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to stick",
+                        "to attach",
+                        "to take",
+                        "to go on"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "usu. with an adverb of manner, e.g. よく乗る"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "疲れる",
+            "is_common": true,
+            "tags": [
+                "wanikani45"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "疲れる",
+                    "reading": "つかれる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get tired",
+                        "to tire",
+                        "to get fatigued",
+                        "to become exhausted",
+                        "to grow weary"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to become worn out (of a well-used object)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to starve"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Archaism"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "絡む",
+            "is_common": true,
+            "tags": [
+                "wanikani19"
+            ],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "絡む",
+                    "reading": "からむ"
+                },
+                {
+                    "word": "搦む",
+                    "reading": "からむ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to twine",
+                        "to get tangled",
+                        "to get entangled",
+                        "to get caught (in)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with mu ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be involved (e.g. of money in a matter)",
+                        "to get involved (in)",
+                        "to be a factor (in)",
+                        "to have an influence"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with mu ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to pick a quarrel (with)",
+                        "to find fault (with)",
+                        "to pester",
+                        "to hassle"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with mu ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "怒る",
+            "is_common": true,
+            "tags": [
+                "wanikani27"
+            ],
+            "jlpt": [
+                "jlpt-n4",
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "怒る",
+                    "reading": "おこる"
+                },
+                {
+                    "word": "怒る",
+                    "reading": "いかる"
+                },
+                {
+                    "word": "瞋る",
+                    "reading": "いかる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get angry",
+                        "to get mad"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to tell someone off",
+                        "to scold"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [
+                        "おこる"
+                    ],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be angular",
+                        "to be square"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [
+                        "いかる"
+                    ],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "治る",
+            "is_common": true,
+            "tags": [
+                "wanikani6"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "治る",
+                    "reading": "なおる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get better",
+                        "to get well",
+                        "to recover (from an illness)",
+                        "to be cured",
+                        "to be restored",
+                        "to heal"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "成る",
+            "is_common": true,
+            "tags": [
+                "wanikani11"
+            ],
+            "jlpt": [
+                "jlpt-n3",
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "成る",
+                    "reading": "なる"
+                },
+                {
+                    "word": "為る",
+                    "reading": "なる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to become",
+                        "to get",
+                        "to grow",
+                        "to turn",
+                        "to reach",
+                        "to attain"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to result in",
+                        "to turn out",
+                        "to end up",
+                        "to prove (to be)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to consist of",
+                        "to be composed of",
+                        "to be made up of"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "as ...からなる or ...よりなる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to be completed",
+                        "to be realized",
+                        "to succeed",
+                        "to be attained",
+                        "to be accomplished"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to change (into)",
+                        "to turn (into)",
+                        "to transform"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to come (to do)",
+                        "to begin (to do)",
+                        "to grow (to do)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to come to",
+                        "to amount to",
+                        "to add up to",
+                        "to make"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to play (the part of)",
+                        "to act as"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be used for",
+                        "to be useful for",
+                        "to serve as"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be promoted"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Shogi"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to do ..."
+                    ],
+                    "parts_of_speech": [
+                        "Auxiliary verb",
+                        "Godan verb with ru ending"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Honorific or respectful (sonkeigo) language",
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "as お + masu stem + になる, or ご + noun + になる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "Naru"
+                    ],
+                    "parts_of_speech": [
+                        "Place"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "受け取る",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "受け取る",
+                    "reading": "うけとる"
+                },
+                {
+                    "word": "受けとる",
+                    "reading": "うけとる"
+                },
+                {
+                    "word": "受取る",
+                    "reading": "うけとる"
+                },
+                {
+                    "word": "請け取る",
+                    "reading": "うけとる"
+                },
+                {
+                    "word": "請取る",
+                    "reading": "うけとる"
+                },
+                {
+                    "word": "うけ取る",
+                    "reading": "うけとる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to receive",
+                        "to get",
+                        "to accept"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to take",
+                        "to interpret",
+                        "to understand"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "捩れる",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "捩れる",
+                    "reading": "ねじれる"
+                },
+                {
+                    "word": "捻れる",
+                    "reading": "ねじれる"
+                },
+                {
+                    "word": "拗れる",
+                    "reading": "ねじれる"
+                },
+                {
+                    "word": "捻じれる",
+                    "reading": "ねじれる"
+                },
+                {
+                    "word": "捩じれる",
+                    "reading": "ねじれる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get twisted",
+                        "to get crooked",
+                        "to get warped"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to become twisted (of a mind, relationship, etc.)",
+                        "to become warped",
+                        "to become perverse",
+                        "to become contrary"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to become troubled",
+                        "to become complicated",
+                        "to become strained"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "苛々",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n3",
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "苛々",
+                    "reading": "いらいら"
+                },
+                {
+                    "word": "苛苛",
+                    "reading": "いらいら"
+                },
+                {
+                    "word": "刺々",
+                    "reading": "いらいら"
+                },
+                {
+                    "word": "刺刺",
+                    "reading": "いらいら"
+                },
+                {
+                    "word": null,
+                    "reading": "イライラ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get irritated",
+                        "to get annoyed",
+                        "to be on the edge",
+                        "to fret",
+                        "to lose patience"
+                    ],
+                    "parts_of_speech": [
+                        "Suru verb",
+                        "Noun",
+                        "Adverb (fukushi)",
+                        "Adverb taking the 'to' particle"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone",
+                        "Onomatopoeic or mimetic word"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "儲ける",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "儲ける",
+                    "reading": "もうける"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to profit",
+                        "to get",
+                        "to earn",
+                        "to gain"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to have (bear, beget) a child"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to have a stroke of luck"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "頂く",
+            "is_common": true,
+            "tags": [
+                "wanikani51"
+            ],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "頂く",
+                    "reading": "いただく"
+                },
+                {
+                    "word": "戴く",
+                    "reading": "いただく"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to receive",
+                        "to get",
+                        "to accept",
+                        "to take",
+                        "to buy"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ku ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Humble (kenjougo) language",
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "貰う"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to eat",
+                        "to drink"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ku ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Humble (kenjougo) language",
+                        "Polite (teineigo) language",
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be crowned with",
+                        "to wear (on one's head)",
+                        "to have (on top)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ku ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "orig. meaning"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to have (as one's leader)",
+                        "to live under (a ruler)",
+                        "to install (a president)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ku ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to get someone to do something"
+                    ],
+                    "parts_of_speech": [
+                        "Auxiliary verb",
+                        "Godan verb with ku ending"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Humble (kenjougo) language",
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "貰う もらう"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "follows a verb in \"-te\" form"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "起きる",
+            "is_common": true,
+            "tags": [
+                "wanikani10"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "起きる",
+                    "reading": "おきる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get up",
+                        "to rise",
+                        "to blaze up (fire)"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to wake up",
+                        "to be awake",
+                        "to stay awake"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to occur (usu. of unfavourable incidents)",
+                        "to happen",
+                        "to take place"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "曇る",
+            "is_common": true,
+            "tags": [
+                "wanikani45"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "曇る",
+                    "reading": "くもる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get cloudy",
+                        "to cloud over",
+                        "to become overcast"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to cloud up",
+                        "to fog up",
+                        "to mist up",
+                        "to become dim"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be gloomy",
+                        "to be clouded (expression)",
+                        "to be downcast"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to look slightly downward (of a noh mask; indicating sadness, grief, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "照る てる"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "from 面曇る"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "湿気る",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "湿気る",
+                    "reading": "しける"
+                },
+                {
+                    "word": "湿気る",
+                    "reading": "しっける"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get damp",
+                        "to get moist",
+                        "to get soggy",
+                        "to become humid"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "分かる",
+            "is_common": true,
+            "tags": [
+                "wanikani3"
+            ],
+            "jlpt": [
+                "jlpt-n2",
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "分かる",
+                    "reading": "わかる"
+                },
+                {
+                    "word": "解る",
+                    "reading": "わかる"
+                },
+                {
+                    "word": "判る",
+                    "reading": "わかる"
+                },
+                {
+                    "word": "分る",
+                    "reading": "わかる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to understand",
+                        "to comprehend",
+                        "to grasp",
+                        "to see",
+                        "to get",
+                        "to follow"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to become clear",
+                        "to be known",
+                        "to be discovered",
+                        "to be realized",
+                        "to be realised",
+                        "to be found out"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "I know!",
+                        "I think so too!"
+                    ],
+                    "parts_of_speech": [],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "連絡",
+            "is_common": true,
+            "tags": [
+                "wanikani19"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "連絡",
+                    "reading": "れんらく"
+                },
+                {
+                    "word": "聯絡",
+                    "reading": "れんらく"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "contacting",
+                        "(making) contact",
+                        "getting in touch",
+                        "communication",
+                        "correspondence",
+                        "call",
+                        "message"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "connection (with a train, bus, etc.)",
+                        "joining (a railway line, etc.)",
+                        "meeting"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "connection (between matters, incidents, etc.)",
+                        "relation",
+                        "link"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Formal or literary term"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "暮れる",
+            "is_common": true,
+            "tags": [
+                "wanikani35"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "暮れる",
+                    "reading": "くれる"
+                },
+                {
+                    "word": "眩れる",
+                    "reading": "くれる"
+                },
+                {
+                    "word": "暗れる",
+                    "reading": "くれる"
+                },
+                {
+                    "word": "昏れる",
+                    "reading": "くれる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get dark",
+                        "to grow dark"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to end (of a day, year, season, etc.)",
+                        "to come to an end",
+                        "to close"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to be sunk in (e.g. despair)",
+                        "to be lost in (e.g. thought)",
+                        "to be overcome with"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "慣れる",
+            "is_common": true,
+            "tags": [
+                "wanikani25"
+            ],
+            "jlpt": [
+                "jlpt-n4",
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "慣れる",
+                    "reading": "なれる"
+                },
+                {
+                    "word": "馴れる",
+                    "reading": "なれる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get used to",
+                        "to grow accustomed to",
+                        "to become familiar with"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 慣れる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to become skilled in",
+                        "to become experienced at"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 慣れる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to become tame",
+                        "to become domesticated"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "esp. 馴れる"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "to get used to doing"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Auxiliary verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "after the -masu stem of a verb"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "濡れる",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n4",
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "濡れる",
+                    "reading": "ぬれる"
+                },
+                {
+                    "word": "濡る",
+                    "reading": "ぬれる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to get wet"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        }
+    ]
+}

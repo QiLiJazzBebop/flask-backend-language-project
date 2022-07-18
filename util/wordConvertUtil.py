@@ -1,143 +1,120 @@
 import json
+import threading
 
 from flask import jsonify
-from jisho_api.word import Word
-from jisho_api.kanji import Kanji
-from threading import Thread
-from requests import get, post, put, patch, delete, options, head
-
-from util.wordTranslateUtil import en2ja, ja2en
-
-request_methods = {
-    'get': get,
-    'post': post,
-    'put': put,
-    'patch': patch,
-    'delete': delete,
-    'options': options,
-    'head': head,
-}
+from util.wordTranslateUtil import w2wsTranslation, googleTranslator, wordsSimilarity
+from util.comUtil import get_networkGraph_forward_dict, get_bubleGraph_forward_dict, get_networkGraph_backward_dict
 
 
-# create search api
-def generateSearchURL(lang, wordGet):
-    forwardURL = "https://smallworldofwords.org/search/" + lang + "/networkGraph/forward/" + wordGet + "/searchBox"
-    return forwardURL
-
-
-def async_request(method, *args, callback=None, timeout=15, **kwargs):
-    """Makes request on a different thread, and optionally passes response to a
-    `callback` function when request returns.
+def attachTranslation(fromLang, toLang, ssmRespond):
     """
-    method = request_methods[method.lower()]
-    if callback:
-        def callback_with_args(response, *args, **kwargs):
+    Attach quick translation result to each pairs
+    :param fromLang: translate from language
+    :param toLang: translate to language
+    :param ssmRespond: the nodes get from ssm project api
+    :return: the response attaching with translation result
+    """
+    for i in range(len(ssmRespond['nodes'])):
+        ssmRespond['nodes'][i]['toLanguage'] = toLang
+        ssmRespond['nodes'][i]['fromLanguage'] = fromLang
+        word = ssmRespond['nodes'][i]['label']
+        try:
+            transList = w2wsTranslation(fromLang, word)
+            ssmRespond['nodes'][i]['mainTranslation'] = transList[0]
+            ssmRespond['nodes'][i]['otherTranslation'] = transList[1:]
+
+        except:
+            ssmRespond['nodes'][i]['mainTranslation'] = ''
+            ssmRespond['nodes'][i]['otherTranslation'] = []
+            # try:
+            #     ssmRespond['nodes'][i]['mainTranslation'] = googleTranslator(toLang, word).text.split()[0]
+            # except:
+            #     pass
+
+    return ssmRespond
+
+
+def attachWordsSimilarity(enNodes, jpNodes):
+    """
+    extract similarity links from ja pais and en pairs
+    :param enNodes:
+    :param jpNodes:
+    :return: list of link, which consist of source ID, des ID, and similarity level(0-2)
+    """
+    res = []
+    for unitEn in enNodes:
+        word1 = unitEn['label']
+        id1 = unitEn['id']
+        for unitJP in jpNodes:
+            # in case some word has no id
             try:
-                callback(response)
+                word2 = unitJP['mainTranslation']
+                id2 = unitJP['id']
+                if word1 != "" and word2 != "":
+                    res.append({"en_id": id1, "jp_id": id2, "s_value": wordsSimilarity(word1, word2)})
             except:
-                callback("error")
-
-        kwargs['hooks'] = {'response': callback_with_args}
-    kwargs['timeout'] = timeout
-    thread = Thread(target=method, args=args, kwargs=kwargs)
-    thread.start()
-    return thread
+                pass
+    return res
 
 
-# multi call
-def enToJpConvertCall(wordGet):
-    # get the word written in other language
-    apiSearchR = Word.request(wordGet)
-    # extract the words from request response
-    wordList = []
-    for word in apiSearchR.data:
-        wordD = word.dict()
-        wordExtract = wordD['slug']
-        wordList.append(wordExtract)
+def bilingualNodes(lang, wordGet, direction):
+    """
+    This function add the bilingual translate pairs to ori node, add japanese node. The direction is boolean, true stand
+    for forward, backward vice versa. support language A - - -> B
+    :param direction: forward relation or backward relation
+    :param lang: then language specified
+    :param wordGet: the word input
+    :return: node after modified
+    """
 
-    # generate the thread to call url
-    threads = []
-    resJsonResponse = []
-    for i, word in enumerate(wordList):
-        threadGet = async_request('get', generateSearchURL('jp', word),
-                                  callback=lambda r: resJsonResponse.append((r.json()['nodes'])))
-        threads.append(threadGet)
-    # join result
-    for threadGet in threads:
-        threadGet.join()
-    # get dictionary for relation explanation
-    apiDictList = [data.dict() for data in apiSearchR.data]
-    for apiDict in apiDictList:
-        print(apiDict)
-    # return response from third party (en->jp relation) and node(en node connection)
-
-    # # short
-    # resJsonResponse = sorted(resJsonResponse, key=lambda x: x[0]['label'])
-    # # long
-    # apiDictList = sorted(apiDictList, key=lambda x: x['slug'])
-    return resJsonResponse
-
-
-def jpToEnConvertCall(wordGet):
-    apiSearchR = Kanji.request(wordGet)
-    wordList = apiSearchR.data.dict()['main_meanings']
-    # multithread request
-    threads = []
-    resJsonResponse = []
-    for word in wordList:
-        threadGet = async_request('get', generateSearchURL('en', word),
-                                  callback=lambda res: resJsonResponse.append((res.json()['nodes'])))
-        threads.append(threadGet)
-    # join result
-    for t in threads:
-        t.join()
-
-    # test output
-    print(apiSearchR.data.dict())
-    return resJsonResponse
-
-
-# jp->en/ en->jp
-# single call
-def bilingualConvertOri(lang, wordGet):
-    res = get(generateSearchURL(lang, wordGet)).json()
-
+    # define from and to language
+    langA = lang
     if lang == 'en':
-        for i, node in enumerate(res['nodes']):
-            try:
-                bilingualList = en2ja(res['nodes'][i]['label'])
-                res['nodes'][i]['mainTranslation'] = bilingualList[0]
-                res['nodes'][i]['otherTranslation'] = bilingualList[1:]
-                res['nodes'][i]['fromLanguage'] = "en"
-                res['nodes'][i]['toLanguage'] = "jp"
-            except:
-                res['nodes'][i]['mainTranslation'] = ""
-                res['nodes'][i]['otherTranslation'] = []
-                res['nodes'][i]['fromLanguage'] = "en"
-                res['nodes'][i]['toLanguage'] = "jp"
-    elif lang == 'jp':
-        for i, node in enumerate(res['nodes']):
-            try:
-                bilingualList = ja2en(res['nodes'][i]['label'])
-                res['nodes'][i]['mainTranslation'] = bilingualList[0]
-                res['nodes'][i]['otherTranslation'] = bilingualList[1:]
-                res['nodes'][i]['fromLanguage'] = "jp"
-                res['nodes'][i]['toLanguage'] = "en"
-            except:
-                res['nodes'][i]['mainTranslation'] = ""
-                res['nodes'][i]['otherTranslation'] = []
-                res['nodes'][i]['fromLanguage'] = "jp"
-                res['nodes'][i]['toLanguage'] = "en"
+        langB = 'jp'
+    else:
+        langB = 'en'
+    print(langA, langB)
+    # translate, get nodes from smm can be parallel
+    try:
+        # get the translation pair over input word
+        bilingualBestPair = googleTranslator(langB, wordGet).text.split()[0]
+        print(bilingualBestPair)
 
-    return jsonify(res)
+        # only get response while have such data
+        method = get_networkGraph_forward_dict if direction else get_networkGraph_backward_dict
+        # simple multi thread
+        smmRespondA = method(langA, wordGet)
+        smmRespondB = method(langB, bilingualBestPair)
+    except Exception:
+        return jsonify({"message": "word request failed, probably not found japanese version"}), 404
 
+    # attach translation result to respond
+    attachTranslation(langA, langB, smmRespondA)
+    attachTranslation(langB, langA, smmRespondB)
+    # basic idea: link  bilingual node using core node
+    # first step: get core word id and en word
+    sourceAID = smmRespondA['nodes'][0]['id']
+    sourceBID = smmRespondB['nodes'][0]['id']
+    # sourceEnWord = bilingualBestPair if lang == 'en' else smmRespondA['nodes'][0]['lang']
 
-# multi call
-def bilingualConvertMulti(lang, wordGet):
+    # second step: link en/jp nodes
+    smmRespondB['nodes'][0] = smmRespondA['nodes'][0]
+    for i in range(1, len(smmRespondB['links'])):
+        sourceID = smmRespondB['links'][i]['source']
+        targetID = smmRespondB['links'][i]['target']
+        if sourceID == sourceBID:
+            smmRespondB['links'][i]['source'] = sourceAID
+        if targetID == sourceBID:
+            smmRespondB['links'][i]['target'] = sourceAID
+
+    sDic = {}
     if lang == 'en':
-        resJsonResponse = enToJpConvertCall(wordGet)
-        return json.dumps(resJsonResponse)
-    elif lang == 'jp':
-        # only return nodes
-        resJsonResponse = jpToEnConvertCall(wordGet)
-        return json.dumps(resJsonResponse)
+        sDic = attachWordsSimilarity(smmRespondA['nodes'], smmRespondB['nodes'])
+    else:
+        sDic = attachWordsSimilarity(smmRespondB['nodes'], smmRespondA['nodes'])
+    res = {langA: {"links": smmRespondA['links'], "nodes": smmRespondA['nodes']},
+           langB: {"links": smmRespondB['links'], "nodes": smmRespondB['nodes']},
+           "similarity": sDic}
+    # third step: assign similarity
+
+    return json.dumps(res)

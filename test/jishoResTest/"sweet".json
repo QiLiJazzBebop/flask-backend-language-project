@@ -1,0 +1,1239 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "slug": "甘い",
+            "is_common": true,
+            "tags": [
+                "wanikani36"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "甘い",
+                    "reading": "あまい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet-tasting",
+                        "sweet",
+                        "sugary",
+                        "sugared"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "fragrant (smelling)",
+                        "sweet (music)"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "lightly salted",
+                        "light in salt",
+                        "not spicy"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "naive",
+                        "overly optimistic",
+                        "soft on",
+                        "generous",
+                        "indulgent",
+                        "easy-going",
+                        "lenient"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "甘く見る"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "half-hearted",
+                        "not finished properly"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "insufficient",
+                        "not satisfactory",
+                        "inadequate",
+                        "loose"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "mild"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "tempting",
+                        "enticing",
+                        "luring"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "甘い言葉"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "可愛らしい",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n3",
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "可愛らしい",
+                    "reading": "かわいらしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "lovely",
+                        "sweet"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "美味しい",
+            "is_common": true,
+            "tags": [
+                "wanikani15"
+            ],
+            "jlpt": [
+                "jlpt-n1",
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "美味しい",
+                    "reading": "おいしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "good(-tasting)",
+                        "nice",
+                        "delicious",
+                        "tasty"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "attractive (offer, opportunity, etc.)",
+                        "appealing",
+                        "convenient",
+                        "favorable",
+                        "desirable",
+                        "profitable"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "美しい",
+            "is_common": true,
+            "tags": [
+                "wanikani9"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "美しい",
+                    "reading": "うつくしい"
+                },
+                {
+                    "word": "愛しい",
+                    "reading": "うつくしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "beautiful",
+                        "pretty",
+                        "lovely",
+                        "sweet",
+                        "pure (heart, friendship, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "結構",
+            "is_common": true,
+            "tags": [
+                "wanikani25"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "結構",
+                    "reading": "けっこう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "splendid",
+                        "nice",
+                        "wonderful",
+                        "delightful",
+                        "lovely",
+                        "excellent",
+                        "fine"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "sufficient",
+                        "satisfactory",
+                        "enough",
+                        "fine",
+                        "all right",
+                        "OK"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "not needing (any more of something)",
+                        "(already) having enough",
+                        "fine (as in \"I'm fine\")",
+                        "(by implication) no, thank you"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "rather",
+                        "quite",
+                        "fairly",
+                        "pretty",
+                        "surprisingly",
+                        "quite a bit",
+                        "fairly well"
+                    ],
+                    "parts_of_speech": [
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "structure",
+                        "construction",
+                        "framework",
+                        "architecture"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "甘美",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "甘美",
+                    "reading": "かんび"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet (taste)",
+                        "luscious"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "sweet (melody, dream, etc.)",
+                        "delightful",
+                        "pleasant",
+                        "mellow",
+                        "mellifluous"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "甘口",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "甘口",
+                    "reading": "あまくち"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet flavour",
+                        "sweet flavor",
+                        "mildness"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun which may take the genitive case particle 'no'",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "flattery"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun",
+                        "Noun which may take the genitive case particle 'no'"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "stupidity"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun",
+                        "Noun which may take the genitive case particle 'no'"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "愛おしい",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "愛おしい",
+                    "reading": "いとおしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "lovely",
+                        "dear",
+                        "beloved",
+                        "darling",
+                        "dearest"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "愛しい いとしい"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "pitiable",
+                        "pathetic",
+                        "piteous",
+                        "poor"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "愛しい いとしい"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "愛くるしい",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "愛くるしい",
+                    "reading": "あいくるしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "lovely",
+                        "cute",
+                        "charming",
+                        "sweet"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "甘々",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "甘々",
+                    "reading": "あまあま"
+                },
+                {
+                    "word": "甘甘",
+                    "reading": "あまあま"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet",
+                        "sugary"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "可憐",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "可憐",
+                    "reading": "かれん"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet (e.g. young girls, flowers blooming)",
+                        "touchingly lovely",
+                        "cute"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "pitiful",
+                        "pitiable"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "煽てる",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "煽てる",
+                    "reading": "おだてる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to flatter",
+                        "to soft-soap",
+                        "to sweet talk",
+                        "to cajole",
+                        "to instigate"
+                    ],
+                    "parts_of_speech": [
+                        "Ichidan verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "芳しい",
+            "is_common": false,
+            "tags": [
+                "wanikani52"
+            ],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "芳しい",
+                    "reading": "かんばしい"
+                },
+                {
+                    "word": "香しい",
+                    "reading": "かんばしい"
+                },
+                {
+                    "word": "馨しい",
+                    "reading": "かんばしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet-smelling",
+                        "fragrant",
+                        "aromatic"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "good (reputation, condition, results, etc.)",
+                        "favorable"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "芳しくない"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "usu. in the negative"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "甘酒",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "甘酒",
+                    "reading": "あまざけ"
+                },
+                {
+                    "word": "醴",
+                    "reading": "あまざけ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet half sake",
+                        "sweet drink made from fermented rice"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Food, cooking"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Amazake"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Amazake” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Amazake?oldid=493060246"
+                        },
+                        {
+                            "text": "Read “甘酒” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/甘酒?oldid=42458950"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "さつま芋",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "さつま芋",
+                    "reading": "さつまいも"
+                },
+                {
+                    "word": "薩摩芋",
+                    "reading": "さつまいも"
+                },
+                {
+                    "word": "甘薯",
+                    "reading": "さつまいも"
+                },
+                {
+                    "word": "甘藷",
+                    "reading": "さつまいも"
+                },
+                {
+                    "word": "甘薯",
+                    "reading": "かんしょ"
+                },
+                {
+                    "word": "甘藷",
+                    "reading": "かんしょ"
+                },
+                {
+                    "word": null,
+                    "reading": "サツマイモ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet potato (Ipomoea batatas)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Sweet potato"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Sweet potato” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Sweet_potato?oldid=495523871"
+                        },
+                        {
+                            "text": "Read “サツマイモ” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/サツマイモ?oldid=42061878"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "スイート",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": null,
+                    "reading": "スイート"
+                },
+                {
+                    "word": null,
+                    "reading": "スウィート"
+                },
+                {
+                    "word": null,
+                    "reading": "スィート"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "sweet (flavour)"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "sweet (of alcohol)"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [
+                        "ドライ"
+                    ],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "sweet (e.g. melody)",
+                        "pleasant (e.g. atmosphere)",
+                        "pleasing",
+                        "delightful"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)",
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "suite (of rooms)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "スイートルーム"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "suite"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Music"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "組曲"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Sweet (band)"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Sweet (band)” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Sweet_(band)?oldid=490818228"
+                        },
+                        {
+                            "text": "Read “スウィート” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/スウィート?oldid=40958437"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "焼酎",
+            "is_common": true,
+            "tags": [
+                "wanikani41"
+            ],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "焼酎",
+                    "reading": "しょうちゅう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "shōchū",
+                        "Japanese spirit distilled from sweet potatoes, rice, etc."
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Shōchū"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Shōchū” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Shōchū?oldid=495166255"
+                        },
+                        {
+                            "text": "Read “焼酎” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/焼酎?oldid=42459781"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "香る",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "香る",
+                    "reading": "かおる"
+                },
+                {
+                    "word": "薫る",
+                    "reading": "かおる"
+                },
+                {
+                    "word": "馨る",
+                    "reading": "かおる"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to smell sweet",
+                        "to be fragrant"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with ru ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "愛敬らしい",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "愛敬らしい",
+                    "reading": "あいきょうらしい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "lovely",
+                        "sweet"
+                    ],
+                    "parts_of_speech": [
+                        "I-adjective (keiyoushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "可愛らしい"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "砂糖菓子",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "砂糖菓子",
+                    "reading": "さとうがし"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "candy",
+                        "sweet",
+                        "confectionary"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1117 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "slug": "結果",
+            "is_common": true,
+            "tags": [
+                "wanikani17"
+            ],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "結果",
+                    "reading": "けっか"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "result",
+                        "consequence",
+                        "outcome",
+                        "effect"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "coming to fruition",
+                        "bearing fruit"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "as a result",
+                        "consequently",
+                        "therefore"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Corollary"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Corollary” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Corollary?oldid=455112891"
+                        },
+                        {
+                            "text": "Read “結果” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/結果?oldid=39284592"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "成果",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "成果",
+                    "reading": "せいか"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "(good) result",
+                        "outcome",
+                        "fruits (of one's labors)",
+                        "product",
+                        "accomplishment"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "出来栄え",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "出来栄え",
+                    "reading": "できばえ"
+                },
+                {
+                    "word": "出来映え",
+                    "reading": "できばえ"
+                },
+                {
+                    "word": "出来ばえ",
+                    "reading": "できばえ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "result",
+                        "effect",
+                        "performance",
+                        "success"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "workmanship",
+                        "execution",
+                        "shape and quality (of an article)",
+                        "finishing touches"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "所産",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "所産",
+                    "reading": "しょさん"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "result",
+                        "fruit (of)",
+                        "product (of)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "効果",
+            "is_common": true,
+            "tags": [
+                "wanikani25"
+            ],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "効果",
+                    "reading": "こうか"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "effect",
+                        "effectiveness",
+                        "efficacy",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Noun which may take the genitive case particle 'no'"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "effects (e.g. sound effects, visual effects, special effects)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "音響効果 おんきょうこうか"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "収穫",
+            "is_common": true,
+            "tags": [
+                "wanikani48"
+            ],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "収穫",
+                    "reading": "しゅうかく"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "harvest",
+                        "crop",
+                        "ingathering"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "fruits (of one's labors)",
+                        "gain",
+                        "result",
+                        "returns"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Harvest"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Harvest” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Harvest?oldid=495119050"
+                        },
+                        {
+                            "text": "Read “収穫” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/収穫?oldid=42724764"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "産物",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "産物",
+                    "reading": "さんぶつ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "product",
+                        "produce"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "result",
+                        "fruit"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Sanbutsu"
+                    ],
+                    "parts_of_speech": [
+                        "Place"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "仕上がり",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "仕上がり",
+                    "reading": "しあがり"
+                },
+                {
+                    "word": "仕上り",
+                    "reading": "しあがり"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "finish",
+                        "end",
+                        "completion",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "合否",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "合否",
+                    "reading": "ごうひ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "success or failure",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "甲斐",
+            "is_common": true,
+            "tags": [
+                "wanikani39"
+            ],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "甲斐",
+                    "reading": "かい"
+                },
+                {
+                    "word": "詮",
+                    "reading": "かい"
+                },
+                {
+                    "word": "効",
+                    "reading": "かい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "effect",
+                        "result",
+                        "worth",
+                        "use",
+                        "avail"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "甲斐 がい"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Kai (former province located in present-day Yamanashi Prefecture)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "答え",
+            "is_common": true,
+            "tags": [
+                "wanikani8"
+            ],
+            "jlpt": [
+                "jlpt-n4",
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "答え",
+                    "reading": "こたえ"
+                },
+                {
+                    "word": "答",
+                    "reading": "こたえ"
+                },
+                {
+                    "word": "応え",
+                    "reading": "こたえ"
+                },
+                {
+                    "word": "報え",
+                    "reading": "こたえ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "answer",
+                        "reply",
+                        "response"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "answer",
+                        "solution",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "所為-1",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "所為",
+                    "reading": "せい"
+                },
+                {
+                    "word": "所為",
+                    "reading": "せえ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "consequence",
+                        "outcome",
+                        "result",
+                        "blame"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "often ...のせい"
+                    ]
+                }
+            ]
+        },
+        {
+            "slug": "成否",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "成否",
+                    "reading": "せいひ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "success or failure",
+                        "outcome",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "為",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "為",
+                    "reading": "ため"
+                },
+                {
+                    "word": "爲",
+                    "reading": "ため"
+                },
+                {
+                    "word": "為め",
+                    "reading": "ため"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "good",
+                        "advantage",
+                        "benefit",
+                        "welfare"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "為に"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "sake",
+                        "purpose",
+                        "objective",
+                        "aim"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "consequence",
+                        "result",
+                        "effect"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "affecting",
+                        "regarding",
+                        "concerning"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Adverb (fukushi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Usually written using kana alone"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "首尾",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "首尾",
+                    "reading": "しゅび"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "beginning and end",
+                        "from beginning to end"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "result",
+                        "outcome",
+                        "course of events"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "dealing with something successfully"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Shubi"
+                    ],
+                    "parts_of_speech": [
+                        "Place"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "成り行き",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "成り行き",
+                    "reading": "なりゆき"
+                },
+                {
+                    "word": "成行き",
+                    "reading": "なりゆき"
+                },
+                {
+                    "word": "成りゆき",
+                    "reading": "なりゆき"
+                },
+                {
+                    "word": "なり行き",
+                    "reading": "なりゆき"
+                },
+                {
+                    "word": "成行",
+                    "reading": "なりゆき"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "course (of events)",
+                        "development",
+                        "progress",
+                        "outcome",
+                        "result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "market order",
+                        "order without limit"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Abbreviation"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "成り行き注文"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "果て",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "果て",
+                    "reading": "はて"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "the end",
+                        "the extremity",
+                        "the limit",
+                        "the limits",
+                        "the result"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "当落",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "当落",
+                    "reading": "とうらく"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "result (of an election)",
+                        "success or defeat (in an election)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "winning or losing (a lottery, raffle, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "出来具合",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "出来具合",
+                    "reading": "できぐあい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "result",
+                        "effect",
+                        "performance",
+                        "success"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Yojijukugo (four character compound)"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "出来上がり",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "出来上がり",
+                    "reading": "できあがり"
+                },
+                {
+                    "word": "でき上がり",
+                    "reading": "できあがり"
+                },
+                {
+                    "word": "出来上り",
+                    "reading": "できあがり"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "completion",
+                        "finish"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "workmanship",
+                        "result",
+                        "outcome"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        }
+    ]
+}
