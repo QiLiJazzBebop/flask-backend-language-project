@@ -174,3 +174,9 @@ from time import time
 # nltk.download('omw-1.4')
 #
 # print(wn.synsets('receive'))
+#
+# from translate import Translator
+#
+# translator = Translator(to_lang="Japanese")
+# translation = translator.translate("sweet")
+# print(translation)

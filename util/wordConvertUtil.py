@@ -37,8 +37,8 @@ def attachTranslation(fromLang, toLang, ssmRespond):
 def attachWordsSimilarity(enNodes, jpNodes):
     """
     extract similarity links from ja pais and en pairs
-    :param enNodes:
-    :param jpNodes:
+    :param enNodes: the input node from en side
+    :param jpNodes: the input node from jp side
     :return: attach similarity level to the ori nodes
     """
     for i, unitEn in enumerate(enNodes[1:]):
@@ -46,10 +46,10 @@ def attachWordsSimilarity(enNodes, jpNodes):
         id1 = unitEn['id']
 
         # set similarity area
-        enNodes[i]['simPair'] = {}
+        enNodes[i]['simPair'] = []
         for j, unitJP in enumerate(jpNodes[1:]):
             if i == 1:
-                jpNodes[j]["simPair"] = {}
+                jpNodes[j]["simPair"] = []
             # in case some word has no id
             try:
                 word2 = unitJP['mainTranslation']
@@ -57,12 +57,12 @@ def attachWordsSimilarity(enNodes, jpNodes):
                 if word1 != "" and word2 != "":
                     # res.append({"en_id": id1, "jp_id": id2, "s_value": wordsSimilarity(word1, word2)})
                     if word1 == word2:
-                        enNodes[i]['simPair'][id2] = 1
-                        jpNodes[j]["simPair"][id1] = 1
+                        enNodes[i]['simPair'].append({"id": id2, "simValue": 1})
+                        jpNodes[j]['simPair'].append({"id": id1, "simValue": 1})
                     else:
                         sim = wordsSimilarity(word1, word2)
-                        enNodes[i]['simPair'][id2] = sim
-                        jpNodes[j]["simPair"][id1] = sim
+                        enNodes[i]['simPair'].append({"id": id2, "simValue": sim})
+                        jpNodes[j]['simPair'].append({"id": id1, "simValue": sim})
             except:
                 pass
     return enNodes, jpNodes
