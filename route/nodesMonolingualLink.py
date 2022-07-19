@@ -1,11 +1,11 @@
 import json
 from flask import Blueprint, request
 import spacy
-nodeLink = Blueprint("nodeLink", __name__, url_prefix="/api/search/link")
+nodeMonoLink = Blueprint("nodeLink", __name__, url_prefix="/api/search/link")
 
 
-@nodeLink.get("/en")
-def getLink():
+@nodeMonoLink.get("/")
+def getMonoLink():
     word1 = request.args.get('word1')
     word2 = request.args.get('word2')
     nlp = spacy.load("en_core_web_sm")

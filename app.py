@@ -4,7 +4,7 @@ from route.helloWorld import baseRoute
 from route.nodesBilingualForwardGraph import convertRoute as convertRouteF
 from route.nodesBilingualBackwardGraph import convertRoute as convertRouteB
 from route.nodeSpecification import nodeTransRoute
-from route.nodesLink import nodeLink
+from route.nodesMonolingualLink import nodeMonoLink
 from flask_cors import CORS
 from flask import Flask
 
@@ -21,7 +21,7 @@ def create_app():
     app.register_blueprint(convertRouteF)
     app.register_blueprint(convertRouteB)
     app.register_blueprint(nodeTransRoute)
-    app.register_blueprint(nodeLink)
+    app.register_blueprint(nodeMonoLink)
 
     return app
 

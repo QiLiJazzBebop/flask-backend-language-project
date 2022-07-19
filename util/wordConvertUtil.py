@@ -39,22 +39,33 @@ def attachWordsSimilarity(enNodes, jpNodes):
     extract similarity links from ja pais and en pairs
     :param enNodes:
     :param jpNodes:
-    :return: list of link, which consist of source ID, des ID, and similarity level(0-2)
+    :return: attach similarity level to the ori nodes
     """
-    res = []
-    for unitEn in enNodes:
+    for i, unitEn in enumerate(enNodes[1:]):
         word1 = unitEn['label']
         id1 = unitEn['id']
-        for unitJP in jpNodes:
+
+        # set similarity area
+        enNodes[i]['simPair'] = {}
+        for j, unitJP in enumerate(jpNodes[1:]):
+            if i == 1:
+                jpNodes[j]["simPair"] = {}
             # in case some word has no id
             try:
                 word2 = unitJP['mainTranslation']
                 id2 = unitJP['id']
                 if word1 != "" and word2 != "":
-                    res.append({"en_id": id1, "jp_id": id2, "s_value": wordsSimilarity(word1, word2)})
+                    # res.append({"en_id": id1, "jp_id": id2, "s_value": wordsSimilarity(word1, word2)})
+                    if word1 == word2:
+                        enNodes[i]['simPair'][id2] = 1
+                        jpNodes[j]["simPair"][id1] = 1
+                    else:
+                        sim = wordsSimilarity(word1, word2)
+                        enNodes[i]['simPair'][id2] = sim
+                        jpNodes[j]["simPair"][id1] = sim
             except:
                 pass
-    return res
+    return enNodes, jpNodes
 
 
 def bilingualNodes(lang, wordGet, direction):
@@ -99,7 +110,7 @@ def bilingualNodes(lang, wordGet, direction):
 
     # second step: link en/jp nodes
     smmRespondB['nodes'][0] = smmRespondA['nodes'][0]
-    for i in range(1, len(smmRespondB['links'])):
+    for i in range(len(smmRespondB['links'])):
         sourceID = smmRespondB['links'][i]['source']
         targetID = smmRespondB['links'][i]['target']
         if sourceID == sourceBID:
@@ -107,14 +118,13 @@ def bilingualNodes(lang, wordGet, direction):
         if targetID == sourceBID:
             smmRespondB['links'][i]['target'] = sourceAID
 
-    sDic = {}
+    # third step: assign similarity
     if lang == 'en':
-        sDic = attachWordsSimilarity(smmRespondA['nodes'], smmRespondB['nodes'])
+        smmRespondA['nodes'], smmRespondB['nodes'] = attachWordsSimilarity(smmRespondA['nodes'], smmRespondB['nodes'])
     else:
-        sDic = attachWordsSimilarity(smmRespondB['nodes'], smmRespondA['nodes'])
+        smmRespondB['nodes'], smmRespondA['nodes'] = attachWordsSimilarity(smmRespondB['nodes'], smmRespondA['nodes'])
     res = {langA: {"links": smmRespondA['links'], "nodes": smmRespondA['nodes']},
-           langB: {"links": smmRespondB['links'], "nodes": smmRespondB['nodes']},
-           "similarity": sDic}
+           langB: {"links": smmRespondB['links'], "nodes": smmRespondB['nodes']}}
     # third step: assign similarity
 
     return json.dumps(res)

@@ -50,17 +50,27 @@ from time import time
 #
 # print(token1.similarity(token2))
 
-## tag function text
+## test tag function
 # import spacy
 # from spacy import displacy
 #
-# nlp = spacy.load("en_core_web_sm")
-# doc = nlp("sweet sugar")
-# displacy.serve(doc, style="dep")
+# nlp = spacy.load("en_core_web_lg")
+# # doc = nlp("sweet sugar")
+# # displacy.serve(doc, style="dep")
+#
+# ## doc similarity test
+#
+# docList = ['a set of rules or principles or laws (especially written ones', 'a coding system used for transmitting messages requiring brevity or secrecy', 'A sign is understood as a discrete unit of meaning in semiotics.']
+# for i, doc in enumerate(docList):
+#     n1 = nlp(doc)
+#     if i < len(docList) - 1:
+#         for j in range(i + 1, len(docList)):
+#             print(i, ", ", j)
+#             doc2 = docList[j]
+#             n2 = nlp(doc2)
+#             print(n1.similarity(n2))
 
-
-### test google translator
-# import googletrans
+## test google translator
 # from googletrans import Translator
 #
 #
@@ -77,9 +87,40 @@ from time import time
 # start_time = time()
 #
 # threadList = []
-# wordList = ["do", "spicy", "word", "forget", "jump", "through", "take", "finally", "try", "finish"]
+#
+# from random_word import RandomWords
+# r = RandomWords()
+# wordList = r.get_random_words()
 # transRes = []
+#
 # for i in range(10):
+#     translator = Translator()
+#     word = wordList[i]
+#     print(word)
+#     threadTrans = ThreadWithReturnValue(target=translator.translate, args=[word, "ja", "en"])
+#     threadTrans.start()
+#     threadList.append(threadTrans)
+#     # threadList.append(getTrans([wordList[i], "en", "ja", i], callback=lambda r: transRes.append(r.json()['nodes'])))
+#
+# for threadTrans in threadList:
+#     transRes.append(threadTrans.join())
+#
+# print(time() - start_time)
+#
+#
+# for t in transRes:
+#     print(t.extra_data)
+# resDict = {"synonymous word list: ": t.extra_data['parsed'][-1]}
+# for pair, value in resDict.items():
+#     print(pair, value)
+# print("\n")
+#
+# start_time = time()
+#
+# threadList = []
+# wordList = ["sweet"]
+# transRes = []
+# for i in range(1):
 #     translator = Translator()
 #     threadTrans = ThreadWithReturnValue(target=translator.translate, args=[wordList[i], "ja", "en"])
 #     threadTrans.start()
@@ -90,32 +131,46 @@ from time import time
 #     transRes.append(threadTrans.join())
 #
 # t = transRes[0]
-# print(t.extra_data['parts'][0])
-# resDict = {"synonymous word list: ": t.extra_data['parsed'][-1]}
-# for pair, value in resDict.items():
-#     print(pair, value)
-# print("\n")
-#
-# start_time = time()
-#
-# threadList = []
-# wordList = ["遂に", "漸く", "挙句", "等々", "揚句"]
-# transRes = []
-# for i in range(5):
-#     translator = Translator()
-#     threadTrans = ThreadWithReturnValue(target=translator.translate, args=[wordList[i], "en", "ja"])
-#     threadTrans.start()
-#     threadList.append(threadTrans)
-#     # threadList.append(getTrans([wordList[i], "en", "ja", i], callback=lambda r: transRes.append(r.json()['nodes'])))
-#
-# for threadTrans in threadList:
-#     transRes.append(threadTrans.join())
-#
-# t = transRes[2]
-# print(t.extra_data['parts'][0])
+# print(t.extra_data['parsed'][-1][0])
+# print(t.extra_data['parsed'][-1][1])
+# print(t.extra_data['parsed'][-1][2])
+# print(t.extra_data['parsed'][-1][3])
+# print(t.extra_data['parsed'][-1][4])
 # resDict = {"synonymous  word list: ": t.extra_data['parsed'][-1][5]}
 # for pair, value in resDict.items():
 #     print(pair, value)
 # print("\n")
 #
 # print(time() - start_time)
+
+
+### test meaning dictionary
+
+## pydictionary
+# from PyDictionary import PyDictionary
+#
+# # Call PyDictionary class
+# dc = PyDictionary()
+# # Get meaning of word "Code"
+# mn = dc.meaning("Code")
+# # Print Result
+# print(mn)
+#
+# # Words
+# my_words = ['cat', 'go', 'likewise', 'watch']
+#
+# dc = PyDictionary(my_words)
+#
+# # Get meaning of muli words
+# res = dc.getMeanings()
+#
+# print("done")
+
+## nltk
+# import nltk
+# from nltk.corpus import wordnet as wn
+#
+# # english definition
+# nltk.download('omw-1.4')
+#
+# print(wn.synsets('receive'))
