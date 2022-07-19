@@ -1,5 +1,10 @@
-# flaskUtil
-## This is the backend for binglingual project
+# The backend for binglingual project
+##
+package usage
+all test function are located in test folder, in this project we call the api from small word project directly, and combined it with serveral api, showing as follow:
+**jisho**, a dictionary for both japanese and english, it reflicated the subsititution suggestion for word in english and japanes.
+**nltk**, use it to get the dictionary for english sense
+**spacy**, use it to denote the similarity between doc and word(only for english word), and tag the phrase.
 
 ## route
 search/nodes function
