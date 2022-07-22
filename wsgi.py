@@ -1,4 +1,5 @@
 from app import app
+import uvicorn
 
 if __name__ == "__main__":
-    app.run()
+    uvicorn.run(app)

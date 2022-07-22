@@ -1,53 +1,100 @@
-import gensim.downloader
-import spacy
-from word2word import Word2word
-from jisho_api.word import Word
-from jisho_api.kanji import Kanji
-from threading import Thread
-from requests import get
-from googletrans import Translator
-from util.comUtil import get_networkGraph_forward_dict
 
-# quick translation model
+from word2word import Word2word
+from googletrans import Translator
+
+## quick translation model
 en2jaModel = Word2word("en", "ja")
 ja2enModel = Word2word("ja", "en")
+
+# load google translate model
 googleTranslatorModel = Translator()
 
-# load spacy model to check similarity
-nlp = spacy.load('en_core_web_md')
 
-
-def wordsSimilarity(w1, w2):
-    """
-    using method: glove_vectors.similarity("sweet", "spicy")
-    :return: the similarity value between two word
-    """
-    return nlp(w1).similarity(nlp(w2))
-
-
-# word 2 word func(get 5 best translation pairs)
-def w2wsTranslation(lang, word):
-    if lang == 'en':
+# word 2 word func(get 5 best translation pairs, in most japanese case, it does not have response)
+def w2wsTranslation(toLang, word):
+    if toLang == 'en':
         return en2jaModel(word)
-    elif lang == 'jp':
+    elif toLang == 'jp':
         return ja2enModel(word)
 
 
-def googleTranslator(toLang, word):
+# use google translate lib, to get response
+def googleTransMulti(toLang, words):
+    wJ = "\n".join(words)
+    if toLang == "en":
+        res = googleTranslatorModel.translate(wJ, src='ja', dest='en').text.split()
+        return res
+    elif toLang == "jp":
+        res = googleTranslatorModel.translate(wJ, src='en', dest='ja').text.split()
+        return res
+    # if not included the language then return ori
+    return words
+
+
+def googleTranslation(toLang, word):
     res = None
+    returnFormat = None
     if toLang == "en":
         res = googleTranslatorModel.translate(word, src='ja', dest='en')
+        returnFormat = {"src": "jp",
+                        "dest": "en",
+                        "text": res.text,
+                        "pronunciation": res.pronunciation,
+                        "definitions": [],
+                        "examples": [],
+                        "translations": []}
     elif toLang == "jp":
         res = googleTranslatorModel.translate(word, src='en', dest='ja')
-    return res
+        returnFormat = {"src": "en",
+                        "dest": "jp",
+                        "text": res.text,
+                        "pronunciation": res.pronunciation,
+                        "definitions": [],
+                        "examples": [],
+                        "translations": []}
+        # definition part
+        definitionsList = res.extra_data['parsed'][-1][1][0]
+        for definition in definitionsList:
+            # pos
+            definitionExplains = {definition[0]: []}
+            explainList = definition[1][0]
+            dictGet = {"explainSentence": "",
+                       "exampleSentence": "",
+                       "synonyms": []}
+            try:
+                dictGet["explainSentence"] = explainList[0]
+                dictGet["exampleSentence"] = explainList[1]
+                dictGet["synonyms"] = [synonym[0] for synonym in explainList[5][0][0]]
+            except:
+                pass
+            definitionExplains[definition[0]].append(dictGet)
+            returnFormat["definitions"].append(definitionExplains)
 
+        # examples part
+        exampleList = res.extra_data['parsed'][-1][2][0]
+        for example in exampleList:
+            exampleSentence = example[1]
+            returnFormat["examples"].append(exampleSentence)
+    if res:
+        # translations part
+        transList = res.extra_data['parsed'][-1][5][0]
+        for tran in transList:
+            # pos
+            transPairs = {tran[0]: []}
+            for pairs in tran[1]:
+                transPairs[tran[0]].append(
+                    {"transResult": pairs[0], "reflectTrans": pairs[2], "frequency": 4 - pairs[3]})
+            returnFormat["translations"].append(transPairs)
+    return returnFormat
 
-# # jisho search func
-def getTopJiTrans(wordGet):
-    respond = Word.request(wordGet)
-    respond = respond.data[:5 if len(respond.data) >= 5 else len(respond.data)]
-    respond = [r.dict() for r in respond]
-    return respond
+# # # jisho search func
+# from jisho_api.word import Word
+# def getTopJiTrans(wordGet):
+#     respond = Word.request(wordGet)
+#     respond = respond.data[:5 if len(respond.data) >= 5 else len(respond.data)]
+#     respond = [r.dict() for r in respond]
+#     return respond
+
 # # jisho multithread func
 # request_methods = {
 #     'get': get

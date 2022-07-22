@@ -3,6 +3,7 @@ version: '3'
 services:
     util_backend:
       build: ./
+      command: uvicorn wsgi:app --host 0.0.0.0 --port 5000
       networks:
         - default
       ports:

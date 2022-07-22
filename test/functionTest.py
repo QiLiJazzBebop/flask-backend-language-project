@@ -180,3 +180,59 @@ from time import time
 # translator = Translator(to_lang="Japanese")
 # translation = translator.translate("sweet")
 # print(translation)
+
+## argos
+# from util.comUtil import get_project_root
+# import argostranslate.package, argostranslate.translate
+#
+# # install package
+# rootPath = get_project_root().__str__()
+# en2jpModelPath = rootPath + "/util/argosTransModel/translate-en_ja-1_1.argosmodel"
+# jp2enModelPath = rootPath + "/util/argosTransModel/translate-ja_en-1_1.argosmodel"
+# argostranslate.package.install_from_path(en2jpModelPath)
+# argostranslate.package.install_from_path(jp2enModelPath)
+#
+# # test trans function
+# installed_languages = argostranslate.translate.get_installed_languages()
+# translation_en_jp = installed_languages[0].get_translation(installed_languages[1])
+# translation_jp_en = installed_languages[1].get_translation(installed_languages[0])
+# print(translation_en_jp.translate("morning"))
+
+# ## google trans list of word
+# from util.wordTranslateUtil import googleTransLationMulti
+# jp_wordList = ['今日', 'は', 'いい', '天気', 'です', 'ね']
+# print(googleTransLationMulti("en", jp_wordList))
+
+# nltk wordnet
+import wn
+from nltk.corpus import wordnet
+import time
+# example"
+# partOfSpeech = {"n": "noun", "v": "verb", "a": "adjective", "r": "adverb", "s": "suffix"}
+#
+# dDogs = wordnet.synsets("sweet")
+#
+# start = time.process_time()
+# for dDog in dDogs:
+#     # pos and definition of word
+#     print(partOfSpeech[dDog.pos()], dDog.definition())
+#     # sentence example
+#     print("examples: ", dDog.examples())
+#     # reflections in english and japanese
+#     print(dDog.lemma_names('eng'))
+#     print(dDog.lemma_names('jpn'))
+#
+# print(time.process_time() - start)
+
+
+# compare two word similarity
+from util.wordSimilarity import wordsWordnetSimilarity, wordsSpacyGeneralSimilarity
+
+start = time.process_time()
+print(wordsSpacyGeneralSimilarity("eventually", "finally"))
+
+print("used: ", time.process_time() - start)
+start = time.process_time()
+
+print(wordsWordnetSimilarity("eventually", "finally"))
+print("used: ", time.process_time() - start)

@@ -1,16 +1,14 @@
-from flask import Blueprint, jsonify, request
+from fastapi import APIRouter
+from util.nodeConvertFromOri import bilingualNodes
 
-from util.wordConvertUtil import bilingualNodes
-from util.wordTranslateUtil import *
-
-convertRoute = Blueprint("nodesBackward", __name__, url_prefix="/api/search/nodes/backward")
+convertRoute = APIRouter(prefix="/api/search/nodes/backward")
 
 
-@convertRoute.get("/en/<wordGet>")
+@convertRoute.get("/en_jp/{wordGet}")
 def bilingualEnConvertGet(wordGet):
-    return bilingualNodes('en', wordGet, False)
+    return bilingualNodes('en', 'jp', wordGet, False)
 
 
-@convertRoute.get("/jp/<wordGet>")
+@convertRoute.get("/jp_en/{wordGet}")
 def bilingualJpConvertGet(wordGet):
-    return bilingualNodes('jp', wordGet, False)
+    return bilingualNodes('jp', 'en', wordGet, False)

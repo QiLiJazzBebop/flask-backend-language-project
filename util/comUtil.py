@@ -23,7 +23,7 @@ def get_dictionaryAll(lang, wordGet):
         raise
 
 
-def get_bubleGraph_forward_dict(lang, wordGet):
+def get_bubGraph_forward_dict(lang, wordGet):
     """
     call format: https://smallworldofwords.org/search/<en>/bubbleGraph/forward/<word>/searchBox
     :return: dict format of response
@@ -36,7 +36,7 @@ def get_bubleGraph_forward_dict(lang, wordGet):
         raise
 
 
-def get_bubleGraph_backward_dict(lang, wordGet):
+def get_bubGraph_backward_dict(lang, wordGet):
     """
     call format: https://smallworldofwords.org/search/<en>/bubbleGraph/backward/<word>/searchBox
     :return: dict format of response
@@ -89,3 +89,13 @@ def async_request(method, *args, callback=None, timeout=15, **kwargs):
     thread = Thread(target=method, args=args, kwargs=kwargs)
     thread.start()
     return thread
+
+
+class ThreadWithReturnValue(Thread):
+    def run(self):
+        if self._target is not None:
+            self._return = self._target(*self._args, **self._kwargs)
+
+    def join(self):
+        super().join()
+        return self._return
