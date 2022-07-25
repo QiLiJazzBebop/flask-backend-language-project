@@ -1,6 +1,7 @@
+import logging
+import sys
 from pathlib import Path
 from threading import Thread
-
 from requests import get
 
 
@@ -19,7 +20,7 @@ def get_dictionaryAll(lang, wordGet):
         res = get(url).json()
         return res
     except Exception:
-        raise
+        raise Exception
 
 
 def get_bubGraph_forward_dict(lang, wordGet):
@@ -58,7 +59,7 @@ def get_networkGraph_backward_dict(lang, wordGet):
         res = get(url).json()
         return res
     except Exception:
-        raise
+        raise Exception("url called failed")
 
 
 def get_networkGraph_forward_dict(lang, wordGet):
@@ -71,7 +72,7 @@ def get_networkGraph_forward_dict(lang, wordGet):
         res = get(url).json()
         return res
     except Exception:
-        raise
+        raise Exception("url called failed")
 
 
 # # create search api
@@ -92,9 +93,19 @@ def async_request(method, *args, callback=None, timeout=15, **kwargs):
 
 class ThreadWithReturnValue(Thread):
     def run(self):
-        if self._target is not None:
-            self._return = self._target(*self._args, **self._kwargs)
+        self.exception = None
+        try:
+            if hasattr(self, '_Thread__target'):
+                # Thread uses name mangling prior to Python 3.
+                self._return = self._Thread__target(*self._Thread__args, **self._Thread__kwargs)
+            else:
+                self._return = self._target(*self._args, **self._kwargs)
+        except Exception as e:
+            ## except handle
+            self.exception = e
 
-    def join(self):
-        super().join()
+    def join(self, timeout=None):
+        super().join(timeout)
+        if self.exception:
+            raise self.exception
         return self._return

@@ -6,9 +6,17 @@ convertRoute = APIRouter(prefix="/api/search/nodes/backward")
 
 @convertRoute.get("/en_jp/{wordGet}")
 def bilingualEnConvertGet(wordGet):
-    return bilingualNodes('en', 'jp', wordGet, False)
+    try:
+        res = bilingualNodes('en', 'jp', wordGet, False)
+        return res
+    except Exception as e:
+        return e
 
 
 @convertRoute.get("/jp_en/{wordGet}")
 def bilingualJpConvertGet(wordGet):
-    return bilingualNodes('jp', 'en', wordGet, False)
+    try:
+        res = bilingualNodes('jp', 'en', wordGet, False)
+        return res
+    except Exception as e:
+        return e

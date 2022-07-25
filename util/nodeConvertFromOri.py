@@ -1,3 +1,6 @@
+import time
+from fastapi import HTTPException
+
 from util.wordSimilarity import wordsSpacyGeneralSimilarity
 from util.wordTranslateUtil import googleTransMulti, googleTranslation
 from util.comUtil import get_networkGraph_forward_dict, get_networkGraph_backward_dict, ThreadWithReturnValue
@@ -75,10 +78,14 @@ def bilingualNodes(fromLang, toLang, wordGet, direction):
     """
     # translate, get nodes from smm can be parallel
     # get the translation pair over input word
-    corePair = googleTranslation(toLang, wordGet)
+    try:
+        corePair = googleTranslation(toLang, wordGet)
+    except:
+        raise HTTPException(status_code=404, detail="word input not a legal word: " + wordGet)
     bilingualBestPair = corePair["text"]
 
     # apply request base on "direction" and "language"
+
     method = get_networkGraph_forward_dict if direction else get_networkGraph_backward_dict
     threadSmmRespondFrom = ThreadWithReturnValue(target=method, args=[fromLang, wordGet])
     threadSmmRespondTo = ThreadWithReturnValue(target=method, args=[toLang, bilingualBestPair])
@@ -86,8 +93,17 @@ def bilingualNodes(fromLang, toLang, wordGet, direction):
     threadSmmRespondFrom.start()
     threadSmmRespondTo.start()
 
-    smmRespondFrom = threadSmmRespondFrom.join()
-    smmRespondTo = threadSmmRespondTo.join()
+    # exception handle
+    try:
+        smmRespondFrom = threadSmmRespondFrom.join()
+    except:
+        raise HTTPException(status_code=404,
+                            detail="word not found from lib, wordInput: " + wordGet)
+    try:
+        smmRespondTo = threadSmmRespondTo.join()
+    except:
+        raise HTTPException(status_code=404,
+                            detail="word not found from lib, wordTransPair: " + bilingualBestPair)
 
     # attach translation result to respond
     attachTranslation(fromLang, toLang, smmRespondFrom)
