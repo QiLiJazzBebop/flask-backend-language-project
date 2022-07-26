@@ -1,18 +1,12 @@
 # The backend for binglingual project
+## package description
+This repo is used to learn the difference between japanese word and english word. It is the sub project under small word project and take used the third party to visulize more info.
+
 ## package usage
 all test function are located in test folder, in this project we call the api from small word project directly, and combined it with serveral api, showing as follow:
-**jisho**, a dictionary for both japanese and english, it reflicated the subsititution suggestion for word in english and japanes.
-**nltk**, use it to get the dictionary for english sense
-**spacy**, use it to denote the similarity between doc and word(only for english word), and tag the phrase.
+
+**nltk**, use it to get the definition for both english word as well as japanese words. The functions we used including <wup_similarity> and <wordnet>.
+**spacy** use it to get quick response on any two word similarity.
+**googleTrans**, the format of data is same as this url https://translate.google.com/?sl=en&tl=ja&text=sweet&op=translate
 
 ## route
-search/nodes function
-I combined the two sides nodes, named en and jp, there are leftdata and rightdata you told me before.
-Besides, I add new functions.similarity value between en word and jp word.
-it indicate the sense closeness between en and jp, bigger means it close, vice versa
-
-search/node function
-Giving jp or en name, return the specific definition, both url return the same format, using jisho api
-
-search/link function
-Giving two english word, return realtion tag between two word
