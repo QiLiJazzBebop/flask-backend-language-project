@@ -1,6 +1,5 @@
 # The backend for binglingual project
-##
-package usage
+## package usage
 all test function are located in test folder, in this project we call the api from small word project directly, and combined it with serveral api, showing as follow:
 **jisho**, a dictionary for both japanese and english, it reflicated the subsititution suggestion for word in english and japanes.
 **nltk**, use it to get the dictionary for english sense
