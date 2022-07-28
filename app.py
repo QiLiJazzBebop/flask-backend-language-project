@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-# from fastapi.middleware import Middleware
-# from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware import Middleware
+from fastapi.middleware.cors import CORSMiddleware
 from route.nodesBilingualGraph import convertRoute
 from route.wordGoogleTrans import wordTranRoute
 from route.wordLegalTrans import wordTransRoute
@@ -11,17 +11,15 @@ from route.helloWorld import baseRoute
 
 
 def create_app():
-    # middleware = [
-    #     Middleware(
-    #         CORSMiddleware,
-    #         allow_origins=['*'],
-    #         allow_credentials=True,
-    #         allow_methods=['*'],
-    #         allow_headers=['*']
-    #     )
-    # ]
-    #
-    # app = FastAPI(middleware=middleware)
+    middleware = [
+        Middleware(
+            CORSMiddleware,
+            allow_origins=['*'],
+            allow_credentials=True,
+            allow_methods=['*'],
+            allow_headers=['*']
+        )
+    ]
 
     tags_metadata = [
         {"name": "Hello Word", "description": "Test whether website in online"},
@@ -37,7 +35,7 @@ def create_app():
         {"name": "Words link", "description": "Build pos tag relation between two word, (sweet candy, nice look)"}
     ]
 
-    app = FastAPI(openapi_tags=tags_metadata)
+    app = FastAPI(middleware=middleware, openapi_tags=tags_metadata)
     # Registering endpoints
     app.include_router(baseRoute)
     app.include_router(wordTransRoute)
