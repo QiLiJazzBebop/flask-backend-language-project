@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 import spacy
-wordsLinkComment = APIRouter(prefix="/api/search/link")
+wordsLinkComment = APIRouter(prefix="/api/search/link", tags=["Words link"])
 
 
 @wordsLinkComment.get("/")

@@ -4,6 +4,9 @@ from pathlib import Path
 from threading import Thread
 from requests import get
 
+# define legal language
+legalLanguageList = ['en', 'jp']
+
 
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
@@ -104,7 +107,7 @@ class ThreadWithReturnValue(Thread):
             ## except handle
             self.exception = e
 
-    def join(self, timeout=None):
+    def join(self, timeout: object = None) -> object:
         super().join(timeout)
         if self.exception:
             raise self.exception

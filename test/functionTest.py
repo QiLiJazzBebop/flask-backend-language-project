@@ -157,7 +157,7 @@ from time import time
 # print(mn)
 #
 # # Words
-# my_words = ['cat', 'go', 'likewise', 'watch']
+from util.comUtil import ThreadWithReturnValue, get_dictionaryAll
 #
 # dc = PyDictionary(my_words)
 #
@@ -225,14 +225,45 @@ import time
 # print(time.process_time() - start)
 
 
-# compare two word similarity
-from util.wordSimilarity import wordsWordnetSimilarity, wordsSpacyGeneralSimilarity
+# compare two word similarity(bilingual)
+# from util.wordSimilarityUtil import wordsWordnetSimilarity, wordsSpacyGeneralSimilarity
+#
+# start = time.process_time()
+# print(wordsSpacyGeneralSimilarity("eventually", "finally"))
+#
+# print("used: ", time.process_time() - start)
+# start = time.process_time()
+#
+# print(wordsWordnetSimilarity("eventually", "finally"))
+# print("used: ", time.process_time() - start)
+#
+# ## additional for japanese
+# # jW = wordnet.synsets('家', lang='jpn')
 
-start = time.process_time()
-print(wordsSpacyGeneralSimilarity("eventually", "finally"))
+# check word exist
+# testList = ['fuc', 'you', 'can', 'try', 'out', 'setting', 'fuc', 'you', 'can', 'try', 'out', 'setting',
+#             'fuc', 'you', 'can', 'try', 'out', 'setting', 'fuc', 'you', 'can', 'try', 'out', 'setting',
+#             'fuc', 'you', 'can', 'try', 'out', 'setting', 'fuc', 'you', 'can', 'try', 'out', 'setting',
+#             'fuc', 'you', 'can', 'try', 'out', 'setting', 'fuc', 'you', 'can', 'try', 'out', 'setting']
+# print(len(testList))
 
-print("used: ", time.process_time() - start)
-start = time.process_time()
 
-print(wordsWordnetSimilarity("eventually", "finally"))
-print("used: ", time.process_time() - start)
+# for i, word in enumerate(testList):
+#     c = get_dictionaryAll("en", word)
+#     print(i)
+
+# ## multi thread
+# tPool = []
+# for i, word in enumerate(testList):
+#     t = ThreadWithReturnValue(target=get_dictionaryAll, args=["en", word])
+#     t.start()
+#     tPool.append(t)
+#
+# for i, t in enumerate(tPool):
+#     print(i, t.join())
+
+from util.wordSimilarityUtil import getWordnetFormat
+from nltk.corpus import wordnet
+w = getWordnetFormat("word", "en")
+
+print(w[0].name().split(".")[1])

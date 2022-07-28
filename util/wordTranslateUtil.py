@@ -1,6 +1,8 @@
-
+from fastapi import HTTPException
 from word2word import Word2word
 from googletrans import Translator
+from util.wordSimilarityUtil import getWordnetFormat
+from util.comUtil import legalLanguageList
 
 ## quick translation model
 en2jaModel = Word2word("en", "ja")
@@ -31,11 +33,23 @@ def googleTransMulti(toLang, words):
     return words
 
 
-def googleTranslation(toLang, word):
+# the format is same as following url
+# https://translate.google.com/?hl=en&sl=en&tl=ja&text=sweet&op=translate
+def googleTranslation(fromLang, toLang, word):
     res = None
     returnFormat = None
-    if toLang == "en":
-        res = googleTranslatorModel.translate(word, src='ja', dest='en')
+    # legal check, source language3 check
+    if fromLang not in legalLanguageList or toLang not in legalLanguageList:
+        # if lang not in field then raise error
+        raise HTTPException(status_code=404,
+                            detail="language not implemented in this version")
+    # legal check, word legacy check
+    wordNLTK = getWordnetFormat(word, fromLang)
+
+    # a, v, s, n
+    # ADJ, VERB, ADV, NOUN
+    if fromLang == 'jp' and toLang == "en":
+        res = googleTranslatorModel.translate(word, dest='en')
         returnFormat = {"src": "jp",
                         "dest": "en",
                         "text": res.text,
@@ -43,8 +57,26 @@ def googleTranslation(toLang, word):
                         "definitions": [],
                         "examples": [],
                         "translations": []}
-    elif toLang == "jp":
-        res = googleTranslatorModel.translate(word, src='en', dest='ja')
+        # definition part
+        keyList = ["a", "v", "s", "n"]
+        keyDict = {"a": "Adjective", "v": "Verb", "s": "Adverb", "n": "Noun"}
+        definitionDict = {"a": [], "v": [], "s": [], "n": []}
+        for sysnet in wordNLTK:
+            dataFormat = {
+                "explainSentence": sysnet.definition(),
+                "exampleSentence": "\n".join(sysnet.examples()) if len(sysnet.examples()) else "",
+                "synonyms": [ lemma.name().split(".")[0] for lemma in sysnet.lemmas()]
+            }
+
+            pos = sysnet.name().split(".")[1]
+            definitionDict[pos].append(dataFormat)
+        for key in keyList:
+            dList = definitionDict[key]
+            if len(dList) > 0:
+                returnFormat["definitions"].append({keyDict[key]: dList})
+
+    elif fromLang == 'en' and toLang == "jp":
+        res = googleTranslatorModel.translate(word, dest='ja')
         returnFormat = {"src": "en",
                         "dest": "jp",
                         "text": res.text,
@@ -75,6 +107,10 @@ def googleTranslation(toLang, word):
         for example in exampleList:
             exampleSentence = example[1]
             returnFormat["examples"].append(exampleSentence)
+    else:
+        # if lang not in field then raise error
+        raise HTTPException(status_code=404,
+                            detail="language trans pairs not implemented in this version")
     if res:
         # translations part
         transList = res.extra_data['parsed'][-1][5][0]
@@ -86,6 +122,24 @@ def googleTranslation(toLang, word):
                     {"transResult": pairs[0], "reflectTrans": pairs[2], "frequency": 4 - pairs[3]})
             returnFormat["translations"].append(transPairs)
     return returnFormat
+
+
+# extract all legal trans pairs from google translate result
+def getGoogleTransPairs(word, fromLang, toLang):
+    if fromLang == "jp" and toLang == "en":
+        transList = googleTranslatorModel.translate(word, src='ja', dest='en').extra_data['parsed'][-1][5][0]
+    elif fromLang == "en" and toLang == "jp":
+        transList = googleTranslatorModel.translate(word, src='en', dest='ja').extra_data['parsed'][-1][5][0]
+    else:
+        raise HTTPException(status_code=404, detail="language input not a legal word: " + word)
+
+    returnList = []
+    for tran in transList:
+        pos = tran[0]
+        for pairs in tran[1]:
+            returnList.append(
+                {"transResult": pairs[0], "reflectTrans": pairs[2], "frequency": 4 - pairs[3], "pos": pos})
+    return returnList
 
 # # # jisho search func
 # from jisho_api.word import Word

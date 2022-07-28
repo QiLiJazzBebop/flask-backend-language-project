@@ -1,9 +1,11 @@
+fastapi==0.79.0
 argostranslate==1.7.0
 googletrans==4.0.0rc1
 spacy==3.4.0
 word2word==1.0.0
 nltk~=3.7
-fastapi==0.79.0
 requests~=2.27.1
 uvicorn~=0.18.2
 gunicorn
+wn~=0.9.1
+urllib3~=1.26.10
