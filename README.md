@@ -20,5 +20,23 @@ all test function are located in test folder, in this project we call the api fr
   - Check how much two word closeness
     - general, return the value.
     - specification, return the definition list as well as definition pair closeness value.
+ 
+## running
+```
+## running in local
+uvicorn wsgi:app --host 0.0.0.0 --port 8000
 
+## runing in docker
+docker compose build
+docker compose up
+
+## remove docker if necessary
+docker compose down
+docker image remove bilingual_visulization_project_backend_util_backend
+```
+
+## Version History
+
+* 1.0.0
+    * Initial Release
 
